@@ -19,7 +19,7 @@ a{
 }
 ul{
     list-style: disc;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .container{
@@ -77,7 +77,7 @@ ul{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     list-style: none;
-    justify-content: space-between;
+    justify-content:space-evenly;
     padding: 0;
     margin: 0 20px;
 }
@@ -95,27 +95,19 @@ padding: 0 10px;
   font-weight: bold;
 }
 
-.top-menu{    
+/* .top-menu{    
     width: 160px;
+} */
+.top-menu__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
 }
-.menu__btn
-{display: none;}
 
-/* #menu__toggle {
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.menu__btn{
     display: none;
-  }
-  #menu__toggle.close {
-    background-image: url("../images/menu.svg");
-    display: none;
-  }
-  #menu__toggle.open {
-    background-image: url("../images/close.svg");
-  } */
+}
 
 .header__subtitle {
     font-weight: 400;
@@ -147,7 +139,7 @@ padding: 0 10px;
 }
 
 .button:hover .button__path{
-fill:  #81c7a5;
+fill:  #fff;
 }
 
 .button__text {
@@ -305,8 +297,6 @@ margin-bottom: 5px;
     background-position: center;
     background-size: cover;
     margin-bottom: 150px;
-    /* background-attachment: fixed;
-    background-position: top; */
 }
 
 .blockquote__txt{
@@ -623,7 +613,7 @@ transition: transform .3s;
 }
 
 
-.top-menu{
+.top-menu__wrapper{
     display: none;
 }
 
@@ -729,6 +719,9 @@ transition: transform .3s;
     line-height: 56px;
 }
 
+.logo__img{
+    width: 250px;
+}
 .header__title span{
     font-size: 32px;
     line-height: 40px;
@@ -769,6 +762,9 @@ width: 100%;
 }
 
 @media(max-width: 640px){
+    .logo__img{
+        width: 235px;
+    }
     .header,
     .servise,
     .info,
@@ -783,6 +779,9 @@ width: 100%;
 }
 
 @media(max-width: 540px){
+    .logo__img{
+        width: 220px;
+    }
 .header__title{
     font-size: 32px;
     line-height: 38px;
@@ -843,6 +842,11 @@ left: calc(50% + 10px);
 }
 
 @media(max-width: 375px){
+.logo__img{
+    width: 194px;
+    height: 72px;
+}
+
     .button__text{
         margin-left: -76px;
     }
