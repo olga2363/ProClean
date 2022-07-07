@@ -18,7 +18,7 @@
 <body>
   <header class="header">
     <nav class="header__navigation">
-      <a class="logo" href="#">
+      <a class="logo" id="logo" href="#">
         <img class="logo__img" src="images/logo.svg" alt="logo">
       </a>
       <button class="menu__btn"> 
@@ -98,7 +98,7 @@
             <h4 class="service__box-title"> Чим ми робимо промивку?
             </h4>
             <p class="service_box-text">Так, без хімії тут не обійтися, точніше без "правильних"
-              хім. реагентів, які ми використовуємо для промивання. Не
+              хімічних реагентів, які ми використовуємо для промивання. Не
               менш важливим є сама процедура та контроль
               показників.</p>
               <p class="service_box-text">
@@ -311,17 +311,28 @@
        <img class="price__img" src="images/service.jpg" alt="">
         <!-- <div class="price__content"> -->
           <ul class="price__list">
-            <li class= "price__list-item">
-              <h4 class="price__list-title">
-            Промивка мембран
-              </h4>
-              <p class="price__list-text">
-                1-5 коштує 2000 грн.
-              </p>
-              <p class="price__list-text">5 - 10 коштує 1800 грн.</p>
-              <p class="price__list-text">10 - 14 коштує 1500 грн.</p>
+            <h3 class="price__list-title">
+              Промивка мембран
+                </h3>
+            <li class= "price__list-item step__list-item ">                                                                                                                                               
+              <h4>Вартість мийки мембран зворотного осмосу 4040 в компанії ProClean:</h4>
+             <ul>
+                <li class="price__list-text">
+                  1-5 коштує 2000 грн.
+                </li>
+                <li class="price__list-text">5 - 10 коштує 1800 грн.</li>
+                <li class="price__list-text">10 - 14 коштує 1500 грн.</li>
+              </ul>
             </li>
             <li class="price__list-item">
+              <li class= "price__list-item step__list-item">                                                                                                                                               
+                <h4>Вартість мийки мембран зворотного осмосу 500 галон в компанії ProClean:</h4>
+                <ul>
+                  <li class="price__list-text">1 - 5 коштує 700 грн.</li>
+                  <li class="price__list-text">6 і більше коштує 500 грн.</li>
+                </ul>
+              </li>
+              <li class="price__list-item step__list-item ">
               <h4 class="price__list-title">
                 Консервація
               </h4>
@@ -329,7 +340,7 @@
                 Консервація 6 місяців - 0 грн
               </p>
             </li>
-            <li class="price__list-item">
+            <li class="price__list-item step__list-item ">
               <h4 class="price__list-title">
                 Зберігання
               </h4>
@@ -398,7 +409,7 @@
       <div class="footer__bottom">
         
         <!-- <a href="#" class="footer__bottom-link">Политика конфиденциальности</a> -->
-        <a class="logo" href="#">
+        <a class="logo" href="#menu">
           <img class="logo__img" src="images/logo.svg" alt="logo">
         </a>
         <!-- <ul class="social">

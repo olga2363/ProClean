@@ -8,6 +8,13 @@ $('.menu__list-link').on('click', function() {
     $('.menu__list').removeClass('menu__list--active');
 });
 
+$('a[href*="#"]').on('click', function (e) {
+    e.preventDefault();
+   
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 1000, 'linear');
+  });
 
 $(function () {
     $('.info-tabs__item').on('click', function (e) {

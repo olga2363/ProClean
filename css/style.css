@@ -11,6 +11,7 @@ body {
   line-height: 19px;
   font-weight: 400;
   color: #303030;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -69,7 +70,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 35px 10px 10px 38px;
+  padding: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
@@ -145,6 +146,7 @@ ul {
 }
 
 .header__title {
+  margin: auto;
   font-weight: 700;
   line-height: 87px;
   font-size: 64px;
@@ -714,6 +716,8 @@ ul {
   }
 
   .header__navigation {
+    position: fixed;
+    width: -webkit-fill-available;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
