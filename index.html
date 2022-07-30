@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <nav class="header__navigation">
       <a class="logo" id="logo" href="#">
         <img class="logo__img" src="images/logo.svg" alt="logo">
@@ -212,50 +212,94 @@
       <h2 class="title"> ціни</h2>
       <div class="price-inner">
         
-       <img class="price__img" src="images/service.jpg" alt="">
-        <!-- <div class="price__content"> -->
+       <!-- <img class="price__img" src="images/service.jpg" alt=""> -->
+        <div class="price__content">
           <ul class="price__list">
-            <h3 class="price__list-title">
-              Промивка мембран
-                </h3>
+            <h3 class="price__list-title">Промивка мембран</h3>
             <li class= "price__list-item services__list-item ">                                                                                                                                               
-              <h4>Вартість мийки мембран зворотного осмосу 4040 в компанії ProClean:</h4>
-             <ul>
+              <h4 class="price__list-subtitle">Мембарана 4040, 2500GPD</h4>
+             <ul class="price__list-content">
                 <li class="price__list-text">
-                  1-5 коштує 2000 грн.
+                  1 шт. - 2000 грн.
                 </li>
-                <li class="price__list-text">5 - 10 коштує 1800 грн.</li>
-                <li class="price__list-text">10 - 14 коштує 1500 грн.</li>
+                <li class="price__list-text">5 шт. - 1800 грн.</li>
+                <li class="price__list-text">14 шт. - 1500 грн.</li>
+              </ul>
+            </li>
+            <li class="price__list-item">
+              <li class= "price__list-item services__list-item">
+                <h4 class="price__list-subtitle">Мембарана 3012 500GPD</h4>
+                <ul class="price__list-content">
+                  <li class="price__list-text">1 шт. - 700 грн.</li>
+                  <li class="price__list-text">5 шт. - 500 грн.</li>
+                  <li class="price__list-text">14 шт. - 300 грн.</li>
+                </ul>
+              </li>
+              <li class="price__list-item services__list-item ">
+              <h4 class="price__list-subtitle">Мембарана 8040, 1100GPD</h4>
+              <ul class="price__list-content">
+                <li class="price__list-text">1 шт. - 6000 грн.</li>
+              </ul>
+            </li>        
+          </ul>
+          <ul class="price__list">
+            <h3 class="price__list-title"> Консервація</h3>
+            <li class= "price__list-item services__list-item ">                                                                                                                                               
+              <h4 class="price__list-subtitle">Мембарана 4040, 2500GPD</h4>
+            <ul class="price__list-content">
+                <li class="price__list-text"> 1 шт. - 200 грн.</li>
+                <li class="price__list-text">5 шт. - 100 грн.</li>
+                <li class="price__list-text">14 шт. - 50 грн.</li>
               </ul>
             </li>
             <li class="price__list-item">
               <li class= "price__list-item services__list-item">                                                                                                                                               
-                <h4>Вартість мийки мембран зворотного осмосу 500 галон в компанії ProClean:</h4>
-                <ul>
-                  <li class="price__list-text">1 - 5 коштує 700 грн.</li>
-                  <li class="price__list-text">6 і більше коштує 500 грн.</li>
+                <h4 class="price__list-subtitle">Мембарана 3012 500GPD</h4>
+                <ul class="price__list-content">
+                  <li class="price__list-text">1 шт. - 100 грн.</li>
+                  <li class="price__list-text">5 шт. - 70 грн.</li>
+                  <li class="price__list-text">14 шт. - 50 грн.</li>
                 </ul>
               </li>
               <li class="price__list-item services__list-item ">
-              <h4 class="price__list-title">
-                Консервація
-              </h4>
-              <p class="price__list-text">
-                Консервація 6 місяців - 0 грн
-              </p>
-            </li>
-            <li class="price__list-item services__list-item ">
-              <h4 class="price__list-title">
-                Зберігання
-              </h4>
-              <p class="price__list-text">
-                Зберігання 6 місяців - 0 грн
-              </p>
-            </li>
-        
+              <h4 class="price__list-subtitle">Мембарана 8040, 1100GPD</h4>
+              <ul class="price__list-content">
+                <li class="price__list-text">1 шт. - 500 грн.</li>
+              </ul>
+            </li>        
           </ul>
-        <!-- </div> -->
-       
+          <ul class="price__list">
+            <h3 class="price__list-title">
+              Зберігання* 
+                </h3>
+            <li class= "price__list-item services__list-item ">                                                                                                                                               
+              <h4 class="price__list-subtitle">Мембарана 4040, 2500GPD</h4>
+            <ul class="price__list-content">
+                <li class="price__list-text"> 1 шт. - 200 грн.</li>
+                <li class="price__list-text">5 шт. - 100 грн.</li>
+                <li class="price__list-text">14 шт. - 50 грн.</li>
+              </ul>
+            </li>
+            <li class="price__list-item">
+              <li class= "price__list-item services__list-item">                                                                                                                                               
+                <h4 class="price__list-subtitle">Мембарана 3012 500GPD</h4>
+                <ul class="price__list-content">
+                  <li class="price__list-text">1 шт. - 100 грн.</li>
+                  <li class="price__list-text">5 шт. - 70 грн.</li>
+                  <li class="price__list-text">14 шт. - 50 грн.</li>
+                </ul>
+              </li>
+              <li class="price__list-item services__list-item ">
+              <h4 class="price__list-subtitle">Мембарана 8040, 1100GPD</h4>
+              <ul class="price__list-content">
+                <li class="price__list-text">1 шт. - 500 грн.</li>
+              </ul>
+            </li>        
+          </ul>
+        </div>
+          <p>* перший місяць зберігання бескоштовне, за умови промивки мембрани в нашому центрі
+          </p>
+          
       </div>
     </div>
   </section>
@@ -316,7 +360,7 @@
       
       <div class="footer__bottom">
       
-        <a class="logo" href="#menu">
+        <a class="logo" href="#header">
           <img class="logo__img" src="images/logo.svg" alt="logo">
         </a>
         <button class="button button-arrow">
