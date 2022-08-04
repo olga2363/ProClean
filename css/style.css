@@ -154,6 +154,8 @@ ul {
   font-weight: 700;
   line-height: 87px;
   font-size: 64px;
+  text-shadow: 2px 2px black;
+  padding: 10px;
 }
 
 .header__title span {
@@ -430,7 +432,7 @@ ul {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.form__content{
+.callback-form__content{
   display: flex;
   justify-content: center;
   text-align: center;
@@ -473,13 +475,20 @@ ul {
   min-width:  375px;
   background-color: transparent;
   padding-bottom: 11px;
-  font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
   font-weight: 400;
   color: #303030;
   margin-bottom: 50px;
 }
+.send__input-error{
+  border: 1px solid red;
+}
+/* .send__input:active, */
+.send__input:focus{
+  background-color: transparent;
+}
+
 .send__input:focus-within{
   outline: none;
   box-shadow: 0px 10px 13px -7px #f3cd8b, 5px 5px 15px 5px rgb(0 0 0 / 0%);
@@ -495,21 +504,21 @@ ul {
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
-  color: #303030;
+  /* color: #303030; */
 }
 
 .send__input:-ms-input-placeholder {
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
-  color: #303030;
+  /* color: #303030; */
 }
 
 .send__input::-ms-input-placeholder {
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
-  color: #303030;
+  /* color: #303030; */
 }
 .send__input::placeholder {
   font-family: "Noto Sans", sans-serif;
@@ -563,6 +572,94 @@ ul {
   right: 20px;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  display: block;
+  z-index: 3;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+  display: block;
+}
+
+
+.modal-request-received {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+ 
+}
+.request-received-container {
+  box-shadow: 0px 10px 13px -7px #f3cd8b, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+  background-color: #fff;
+  min-width: 375px;
+  padding: 80px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.callback-form-container {
+  background: var(--c-dark);
+  padding: 35px 30px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.callback-form-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  width: 260px;
+  margin: 0 0 20px 0;
+}
+
+.callback-form-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 10px 15px 10px;
+  border-bottom: 1px solid var(--c-grey-blue);
+  text-align: center;
+  color: var(--c-grey-blue);
+  margin-bottom: 30px;
+}
+.callback-form-submit,
+.callback-form-input { 
+  width: 386px;
+  box-sizing: border-box;
+}
+
+.send-input-error {
+  border: 1px solid red;
+}
+.modal-close-btn {
+  font-size: 18px;
+  position: absolute;
+  border: none;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
 @media (max-width: 1200px) {
   .technologies__box {
     -ms-flex-preferred-size: 100%;

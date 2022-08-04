@@ -304,9 +304,9 @@
     </div>
   </section>
 
-  <section class="form">
+  <section class="callback-form">
     <div class="container">
-      <div class="form__content" id="form">
+      <div class="callback-form__content" id="form">
         <form class="send__form">
           <h2 class="title">залишити заявку</h2>
 
@@ -315,10 +315,10 @@
           <input type="hidden" name="admin_email" value="4040cleaning@gmail.com">
           <input type="hidden" name="form_subject" value="Form">
           <!-- END Hidden Required Fields -->
-          <input class="send__input" name="Имя" type="text" placeholder="Им'я">
-          <input class="send__input" name="Телефон" type="tel" placeholder="Телефон">
-          <input class="send__input" name="Електронна адреса" type="email" placeholder="Електронна адреса">
-          <button class="send__form-btn button">
+          <input class="send__input" id="callback-form-input-name" name="Имя" type="text" placeholder="Им'я">
+          <input class="send__input" id="callback-form-input-phone" name="Телефон" type="tel" placeholder="+38 (0__) ___-__-__">
+          <input class="send__input" id="callback-form-input-email" name="Електронна адреса" type="email" placeholder="Електронна адреса">
+          <button class="send__form-btn button" type="submit">
             <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="button__path"
                 d="M99.0521 50C99.0521 77.0615 77.1029 99 50.026 99C22.9492 99 1 77.0615 1 50C1 22.9385 22.9492 1 50.026 1C77.1029 1 99.0521 22.9385 99.0521 50Z"
@@ -331,6 +331,7 @@
               надіслати
             </span>
           </button>
+          <!-- <input type="submit" value="Discuss the project  —"/> -->
         </form>
 
         </div>
@@ -376,10 +377,32 @@
     </div>
   </footer> 
 
+<section class="modals-wrapper">
+  
+    <div class="modal modal-request-received modal-area-bgd" id="request-received">
+        <div class="request-received-container modal-area-content">
+         <button id="modal-close-btn" class="modal-close-btn">
+            <svg  width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.2656 24.3593C22.12 25.2136 23.5051 25.2136 24.3595 24.3593C25.2135 23.5049 25.2135 22.1198 24.3595 21.2654L15.5939 12.4999L24.3592 3.73448C25.2135 2.88019 25.2135 1.4951 24.3592 0.640772C23.5051 -0.213523 22.12 -0.213523 21.2656 0.640772L12.5001 9.40639L3.7345 0.640743C2.88017 -0.213581 1.49508 -0.213581 0.640776 0.640743C-0.213553 1.49504 -0.213553 2.88013 0.640776 3.73445L9.40624 12.4999L0.640747 21.2654C-0.213582 22.1198 -0.213582 23.5049 0.640747 24.3593C1.49505 25.2136 2.88014 25.2136 3.73447 24.3593L12.5001 15.5938L21.2656 24.3593Z" fill="#0A0000"/>
+              </svg>
+          </button> 
+          <h3 class="request-received-title">Дякую!</h3>
+          <p class="request-received-primary-msg">
+            Ваше повідомлення надіслано.
+          </p>
+          <p class="request-received-primary-msg">
+            Ми з Вами зв'яжемось найближчим часом.
+          </p>
+          
+        </div>
+    </div>
+
+</section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/callback-form.js"></script>
  
 </body>
 
