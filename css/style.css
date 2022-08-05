@@ -451,7 +451,7 @@ ul {
 }
 
 .footer__top {
-  margin: 100px 0;
+  margin: 0 0 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,6 +706,7 @@ ul {
   .servise__img {
     width: 100%;
     height: 400px;
+    margin-top: 30px;
   }
 
 .services-inner,
