@@ -42,7 +42,7 @@ callbackForm.addEventListener('submit', function(event){
         userPhone.classList.remove('send-input-error');
     }
 
-    if (!userEmail.value.trim() || isEmailValid(userEmail.value)) {
+    if (!userEmail.value.trim() || !isEmailValid(userEmail.value))  {
         userEmail.classList.add('send-input-error');
         hasError = true;
     } else {
@@ -64,15 +64,13 @@ callbackForm.addEventListener('submit', function(event){
     }, 2000);
 });
 
-function isPhoneValid(phone = '') {
-    const regexp = /(\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4})/;
-
-    return phone.match(regexp);
-}
-
 function isEmailValid(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email.toLowerCase());
 }
 
+function isPhoneValid(phone = '') {
+    const regexp = /(\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4})/;
 
+    return phone.match(regexp);
+}
