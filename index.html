@@ -13,13 +13,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/jquery.fancybox.css">
-  <link rel="stylesheet" href="css/min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header" id="header">
-    <nav class="header__navigation">
-      <a class="logo" id="logo" href="#">
+    <div class="header-page" id="header-page">
+    <nav class="header__navigation" id="navigation">
+      <a class="logo" id="logo" href="#header-page">
         <img class="logo__img" src="images/logo.svg" alt="logo">
       </a>
       <button class="menu__btn"> 
@@ -47,7 +48,7 @@
           
         </div>
     </nav>
-    <h1 class="header__title">
+    <h1 class="header__title" id="center-membran">
      Центр обслуговування мембран
     </h1>
     <a class="header__button button" href="#form">
@@ -61,6 +62,7 @@
       </svg>
       <span class="button__text">залишити заявку</span>
     </a>
+  </div>
   </header>
 
   <section class="info" id="servise">
@@ -69,10 +71,9 @@
 
         <div class="info__content">
           <h2 class="title">ProНас</h2>
-            <h3 class="box-title">Якщо у вас є мембранний елемент фільтра зворотного осмосу, Вам не потрібна інформація про те, що це і як працює, як забруднюється і скільки коштує покупка нового. Ми розповімо як ми обслуговуємо мембрани, продовжуючи термін служби, зберігаючи продуктивність елемента та якість чистої води.</h3>
             <p class="box-text">Компанія ProClean надеє послуги з професійного обслуговування основних типів мембранних елементів, що використовуються в системах зворотнього осмосу.</p>
             <p class="box-text">Ми здійснюємо промивку, відновлюємо продуктивність, збільшуємо термін служби, консервуємо і зберігаємо мембрани, починаючи з очисних елементів для середнього і малого бізнесу(HORECA) і закінчуючи мембранами, що використовуються у великих промислових системах зворотнього осмосу.</p>
-            <p class="box-text">Застосування сучасного, технологічного обладнання промивки, забезпечує високу ефективність у відновленні продуктивності мембранних елементів, а використання хімічних реагентів світових лідерів індустрії надає можливість реанімувати мембранне полотно до майже початкового рівня виробничої здатності, без будь-яких хімічних ушкоджень.</p>
+            <p class="box-text">Застосування сучасного технологічного обладнання промивки, забезпечує високу ефективність у відновленні продуктивності мембранних елементів, а використання хімічних реагентів світових лідерів індустрії надає можливість реанімувати мембранне полотно до майже початкового рівня виробничої здатності, без будь-яких хімічних ушкоджень.</p>
             <p class="box-text">Користуючись послугами компанії ProClean, будьте певні, що ваші мембрани у надійних професійних руках. Ми відновлюємо, навіть «нульові мембрани».</p>
           </div>
           
@@ -115,7 +116,7 @@
             <li>Промивання кислотним розчином;</li>
             <li>Бактерицидна обробка;</li>
             <li>Тестування мембранного елемента після промивання;</li>
-            <li>Консервація в індивідуальне впакування або в корпус якому прийшла;</li>
+            <li>Консервація в індивідуальне упакування або в корпус якому прийшла;</li>
           </ul>         
         </div>
 
@@ -128,8 +129,7 @@
 
   <blockquote class="blockquote">
     <p class="blockquote__txt">
-Хімія тільки від виробників-лідерів. Всі хімікати сертифіковані. Устаткування, яке ми використовували у проекті, для дотримання нашої унікальної технології промивання підбиралося тільки найкраще, тільки надійне, щоб Ви не чекали, поки ми його ремонтуватимемо.
-    </p>
+      Для дотримання унікальної технологіїї, яку ми використовуємо при відновленні мембранних елементів, ми застосовуємо сертифіковані хімічні реагенти таких відомих виробників як Ecosoft та BWT, а спеціально розроблене обладнання дозволяє здійснювати процес послідовно-безперервним, що не потребує додаткового часу для накопичення мембран у черзі.    </p>
   </blockquote>
 
 
@@ -163,7 +163,7 @@
             </li>
             <li class="services__list-item">
               <h4 class="services__list-title">
-                У нашому центрі кожна мембрана мембрана реєструється та проходить ряд етапів:
+                У нашому центрі кожна мембрана реєструється та проходить ряд етапів:
               </h4>
               <ul>
                 <li>Візуальний огляд та оцінка необхідності поверхневого очищення спеціальними засобами;</li>
@@ -189,9 +189,9 @@
                 <h5 class="indicators__subtitle">Будь-який із показників допоможе визначити необхідність
                   сервісу:</h5>
                 <ul class="box-list box-list-indicators">
-                  <li>падіння продуктивності мембрани на 15-20%;</li>
-                  <li>зниження нормативної якості чистої води (Підвищення tds пермеату на 10-15%);</li>
-                  <li>збільшення робочого тиску на 10%;</li>
+                  <li>Падіння продуктивності мембрани на 15-20%;</li>
+                  <li>Зниження нормативної якості чистої води (Підвищення tds пермеату на 10-15%);</li>
+                  <li>Збільшення робочого тиску на 10%;</li>
                   <li>Пройшло 6 місяців після запуску нової або після сервісу.</li>
                 </ul>
               </div>
@@ -210,24 +210,24 @@
           <h3 class="price__list-title">Промивка мембран</h3>
           <ul class="price__list">
             <li class= "price__list-item services__list-item ">                                                                                                                                               
-              <h4 class="price__list-subtitle">Мембарана 4040, 2500GPD</h4>
+              <h4 class="price__list-subtitle">Мембрана 4040, 2500GPD</h4>
              <ul class="price__list-content">
-                <li class="price__list-text">1 шт. - 2000 грн.</li>
-                <li class="price__list-text">5 шт. - 1800 грн.</li>
-                <li class="price__list-text">14 шт. - 1500 грн.</li>
+                <li class="price__list-text">1 шт. - 2000 грн./шт.</li>
+                <li class="price__list-text">5 шт. - 1800 грн./шт.</li>
+                <li class="price__list-text">14 шт. - 1500 грн./шт.</li>
               </ul>
             </li>
             <li class="price__list-item">
               <li class= "price__list-item services__list-item">
-                <h4 class="price__list-subtitle">Мембарана 3012 500GPD</h4>
+                <h4 class="price__list-subtitle">Мембрана 3012 500GPD</h4>
                 <ul class="price__list-content">
-                  <li class="price__list-text">1 шт. - 700 грн.</li>
-                  <li class="price__list-text">5 шт. - 500 грн.</li>
-                  <li class="price__list-text">14 шт. - 300 грн.</li>
+                  <li class="price__list-text">1 шт. - 700 грн./шт.</li>
+                  <li class="price__list-text">5 шт. - 500 грн./шт.</li>
+                  <li class="price__list-text">14 шт. - 300 грн./шт.</li>
                 </ul>
               </li>
               <li class="price__list-item services__list-item ">
-                <h4 class="price__list-subtitle">Мембарана 8040, 1100GPD</h4>
+                <h4 class="price__list-subtitle">Мембрана 8040, 1100GPD</h4>
                 <ul class="price__list-content">
                   <li class="price__list-text">1 шт. - 6000 грн.</li>
                 </ul>
@@ -238,26 +238,26 @@
            <h3 class="price__list-title"> Консервація</h3>
           <ul class="price__list">
             <li class= "price__list-item services__list-item ">                                                                                                                                               
-              <h4 class="price__list-subtitle">Мембарана 4040, 2500GPD</h4>
+              <h4 class="price__list-subtitle">Мембрана 4040, 2500GPD</h4>
               <ul class="price__list-content">
-                <li class="price__list-text"> 1 шт. - 200 грн.</li>
-                <li class="price__list-text">5 шт. - 100 грн.</li>
-                <li class="price__list-text">14 шт. - 50 грн.</li>
+                <li class="price__list-text"> 1 шт. - 200 грн./шт.</li>
+                <li class="price__list-text">5 шт. - 100 грн./шт.</li>
+                <li class="price__list-text">14 шт. - 50 грн./шт.</li>
               </ul>
             </li>
             <li class="price__list-item">
               <li class= "price__list-item services__list-item">                                                                                                                                               
-                <h4 class="price__list-subtitle">Мембарана 3012 500GPD</h4>
+                <h4 class="price__list-subtitle">Мембрана 3012 500GPD</h4>
                 <ul class="price__list-content">
-                  <li class="price__list-text">1 шт. - 100 грн.</li>
-                  <li class="price__list-text">5 шт. - 70 грн.</li>
-                  <li class="price__list-text">14 шт. - 50 грн.</li>
+                  <li class="price__list-text">1 шт. - 100 грн./шт.</li>
+                  <li class="price__list-text">5 шт. - 70 грн./шт.</li>
+                  <li class="price__list-text">14 шт. - 50 грн./шт.</li>
                 </ul>
               </li>
               <li class="price__list-item services__list-item ">
-              <h4 class="price__list-subtitle">Мембарана 8040, 1100GPD</h4>
+              <h4 class="price__list-subtitle">Мембрана 8040, 1100GPD</h4>
               <ul class="price__list-content">
-                <li class="price__list-text">1 шт. - 500 грн.</li>
+                <li class="price__list-text">1 шт. - 500 грн./шт.</li>
               </ul>
             </li>        
           </ul>
@@ -267,26 +267,26 @@
           <h3 class="price__list-title">Зберігання*</h3>
           <ul class="price__list">
             <li class= "price__list-item services__list-item ">                                                                                                                                               
-              <h4 class="price__list-subtitle">Мембарана 4040, 2500GPD</h4>
+              <h4 class="price__list-subtitle">Мембрана 4040, 2500GPD</h4>
             <ul class="price__list-content">
-                <li class="price__list-text"> 1 шт. - 200 грн.</li>
-                <li class="price__list-text">5 шт. - 100 грн.</li>
-                <li class="price__list-text">14 шт. - 50 грн.</li>
+                <li class="price__list-text"> 1 шт. - 200 грн./шт.</li>
+                <li class="price__list-text">5 шт. - 100 грн./шт.</li>
+                <li class="price__list-text">14 шт. - 50 грн./шт.</li>
               </ul>
             </li>
             <li class="price__list-item">
               <li class= "price__list-item services__list-item">                                                                                                                                               
-                <h4 class="price__list-subtitle">Мембарана 3012 500GPD</h4>
+                <h4 class="price__list-subtitle">Мембрана 3012 500GPD</h4>
                 <ul class="price__list-content">
-                  <li class="price__list-text">1 шт. - 100 грн.</li>
-                  <li class="price__list-text">5 шт. - 70 грн.</li>
-                  <li class="price__list-text">14 шт. - 50 грн.</li>
+                  <li class="price__list-text">1 шт. - 100 грн./шт.</li>
+                  <li class="price__list-text">5 шт. - 70 грн./шт.</li>
+                  <li class="price__list-text">14 шт. - 50 грн./шт.</li>
                 </ul>
               </li>
               <li class="price__list-item services__list-item ">
-              <h4 class="price__list-subtitle">Мембарана 8040, 1100GPD</h4>
+              <h4 class="price__list-subtitle">Мембрана 8040, 1100GPD</h4>
               <ul class="price__list-content">
-                <li class="price__list-text">1 шт. - 500 грн.</li>
+                <li class="price__list-text">1 шт. - 500 грн./шт.</li>
               </ul>
             </li>        
           </ul>
@@ -308,7 +308,7 @@
           <input type="hidden" name="admin_email" value="4040cleaning@gmail.com">
           <input type="hidden" name="form_subject" value="Form">
           <!-- END Hidden Required Fields -->
-          <input class="send__input" id="callback-form-input-name" name="Имя" type="text" placeholder="Им'я">
+          <input class="send__input" id="callback-form-input-name" name="Имя" type="text" placeholder="Ім'я">
           <input class="send__input" id="callback-form-input-phone" name="Телефон" type="tel" placeholder="+38 (0__) ___-__-__">
           <input class="send__input" id="callback-form-input-email" name="Електронна адреса" type="email" placeholder="Електронна адреса">
           <button class="send__form-btn button" type="submit">
@@ -339,7 +339,7 @@
           контакти
         </h2>
         <ul class="footer__contacts-list">
-          <li class="footer__contacts-item">адреса: м. Київ, вул. Западинська 5</li>
+          <li class="footer__contacts-item">адреса: м. Київ, вул. Западинська, 5</li>
           <li class="footer__contacts-item"><a class="footer__phone" href="tel:+380961404080">тел.: +38 096 1 4040 80</a>
           </li>         
           <li class="footer__contacts-item"><a class="footer__phone" href="mailto:4040cleaning@gmail.com">e-mail: 4040cleaning@gmail.com</a>
