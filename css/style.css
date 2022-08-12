@@ -395,8 +395,7 @@ ul {
 
 .services__list-title,
 .indicators__box-title,
-.price__list-subtitle,
-.footer__social-title{
+.price__list-subtitle{
   margin-bottom: 2px;
   font-size: 16px;
   line-height: 25px;
@@ -432,7 +431,8 @@ ul {
   color: #ffff;
 }
 
-.price__list-title {
+.price__list-title,
+.footer__social-title {
   font-size: 20px;
   margin-bottom: 2px;
   line-height: 25px;
@@ -563,13 +563,14 @@ ul {
   margin-bottom: 50px;
 }
 
-.footer__contacts-item {
+.footer__contacts-item,
+.footer__social-item {
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 30px;
 }
 
-.footer__contacts-list {
+.footer__contacts-list{
   list-style: none;
   padding: 0;
   text-align: start;
@@ -720,15 +721,16 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
+
 .footer__menu-list,
 .footer__social-list{
   text-align: start;
   list-style: none;
-  padding: 0px;
+  /* padding: 0px; */
 }
-.footer__social-item{
+/* .footer__social-item{
   margin-bottom: 10px;
-}
+} */
 .facebook::before{
   content:url('/images/facebook.svg');
   padding-right: 10px;
@@ -957,7 +959,9 @@ ul {
 .footer__contacts-list {
     text-align: center;
   }
-
+  .footer__social-list{
+    text-align: center;
+  }
   /* .button-arrow {
     display: none;
   } */
