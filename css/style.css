@@ -1137,6 +1137,12 @@ ul {
   .our-map {
     max-width: 100%;
   }
+  .footer__menu-list{
+    display: flex;
+  }
+  .button__path{
+    max-width: 50px;
+  }
 }
 @media (max-width: 540px) {
   .logo__img {
