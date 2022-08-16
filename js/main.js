@@ -30,7 +30,7 @@ $('a[href*="#"]').on('click', function (e) {
 
 $(function () {
     //E-mail Ajax Send
-    $(".footer__form").submit(function () { //Change
+    $(".send__form").submit(function () { //Change
         var th = $(this);
         $.ajax({
             type: "POST",
